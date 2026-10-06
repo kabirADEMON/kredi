@@ -1,5 +1,6 @@
 # Kredi · le carnet de crédit des commerçants
 
+[![CI](https://github.com/kabirADEMON/kredi/actions/workflows/ci.yml/badge.svg)](https://github.com/kabirADEMON/kredi/actions/workflows/ci.yml)
 ![Node](https://img.shields.io/badge/Node.js-22-5FA04E?logo=nodedotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Drizzle-4169E1?logo=postgresql&logoColor=white)
@@ -92,7 +93,7 @@ npm test            # 65 tests de l'API : règles métier, sécurité, concurren
 npm run test:e2e    # 10 parcours dans un vrai navigateur (après npm run build)
 ```
 
-Les tests de bout en bout jouent le parcours complet : inscription, ajout d'un client, crédit, remboursement refusé s'il dépasse le solde, annulation, lien WhatsApp, relevé ouvert par le client, paiement Mobile Money, mise à jour du carnet, changement de PIN, verrouillage, démo. Le workflow d'intégration continue (formatage, types, tests de l'API, compilation, tests de bout en bout) est prêt dans `docs/ci.yml` : il s'active en le plaçant dans `.github/workflows/`.
+Les tests de bout en bout jouent le parcours complet : inscription, ajout d'un client, crédit, remboursement refusé s'il dépasse le solde, annulation, lien WhatsApp, relevé ouvert par le client, paiement Mobile Money, mise à jour du carnet, changement de PIN, verrouillage, démo. La CI GitHub Actions lance le formatage, les types, les tests de l'API, la compilation et les tests de bout en bout à chaque push.
 
 ## Déploiement
 
